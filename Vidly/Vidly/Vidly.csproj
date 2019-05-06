@@ -219,9 +219,50 @@
     <Compile Include="Migrations\201904181848590_ApplyAnnotationtoCustomerName.Designer.cs">
       <DependentUpon>201904181848590_ApplyAnnotationtoCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905022003294_populateCustomerTable.cs" />
+    <Compile Include="Migrations\201905022003294_populateCustomerTable.Designer.cs">
+      <DependentUpon>201905022003294_populateCustomerTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905031840124_MembershipTypeNamefieldAded.cs" />
+    <Compile Include="Migrations\201905031840124_MembershipTypeNamefieldAded.Designer.cs">
+      <DependentUpon>201905031840124_MembershipTypeNamefieldAded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905031844064_seedMembershipTypeName.cs" />
+    <Compile Include="Migrations\201905031844064_seedMembershipTypeName.Designer.cs">
+      <DependentUpon>201905031844064_seedMembershipTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905031900528_seedMembershipTypeName1.cs" />
+    <Compile Include="Migrations\201905031900528_seedMembershipTypeName1.Designer.cs">
+      <DependentUpon>201905031900528_seedMembershipTypeName1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905031902580_seedMembershipTypeNamepart2.cs" />
+    <Compile Include="Migrations\201905031902580_seedMembershipTypeNamepart2.Designer.cs">
+      <DependentUpon>201905031902580_seedMembershipTypeNamepart2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905031913290_seedMembershipTypeName2.cs" />
+    <Compile Include="Migrations\201905031913290_seedMembershipTypeName2.Designer.cs">
+      <DependentUpon>201905031913290_seedMembershipTypeName2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905031920248_ADDBirtdaytCustomer.cs" />
+    <Compile Include="Migrations\201905031920248_ADDBirtdaytCustomer.Designer.cs">
+      <DependentUpon>201905031920248_ADDBirtdaytCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905031927256_addeddetails.cs" />
+    <Compile Include="Migrations\201905031927256_addeddetails.Designer.cs">
+      <DependentUpon>201905031927256_addeddetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905061420218_addedGenreModel.cs" />
+    <Compile Include="Migrations\201905061420218_addedGenreModel.Designer.cs">
+      <DependentUpon>201905061420218_addedGenreModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905061422165_populateGenretable.cs" />
+    <Compile Include="Migrations\201905061422165_populateGenretable.Designer.cs">
+      <DependentUpon>201905061422165_populateGenretable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipTypes.cs" />
@@ -255,7 +296,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -323,6 +366,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904181848590_ApplyAnnotationtoCustomerName.resx">
       <DependentUpon>201904181848590_ApplyAnnotationtoCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905022003294_populateCustomerTable.resx">
+      <DependentUpon>201905022003294_populateCustomerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905031840124_MembershipTypeNamefieldAded.resx">
+      <DependentUpon>201905031840124_MembershipTypeNamefieldAded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905031844064_seedMembershipTypeName.resx">
+      <DependentUpon>201905031844064_seedMembershipTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905031900528_seedMembershipTypeName1.resx">
+      <DependentUpon>201905031900528_seedMembershipTypeName1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905031902580_seedMembershipTypeNamepart2.resx">
+      <DependentUpon>201905031902580_seedMembershipTypeNamepart2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905031913290_seedMembershipTypeName2.resx">
+      <DependentUpon>201905031913290_seedMembershipTypeName2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905031920248_ADDBirtdaytCustomer.resx">
+      <DependentUpon>201905031920248_ADDBirtdaytCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905031927256_addeddetails.resx">
+      <DependentUpon>201905031927256_addeddetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905061420218_addedGenreModel.resx">
+      <DependentUpon>201905061420218_addedGenreModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905061422165_populateGenretable.resx">
+      <DependentUpon>201905061422165_populateGenretable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

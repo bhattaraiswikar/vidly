@@ -11,12 +11,29 @@
     <p>No movies in the list</p>
 }*@
 
+<table>
+    <thead>
+        <tr>
+            <th>  Customer  </th>
+            <th>Discount Rates</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>  @Html.ActionLink(customer.Name, "Details", "Customer", new { id = customer.Id }, null)  </td>
+                <td>  @customer.MembershipType.Name</td>
+            </tr>
+        }
 
-    <ol>
+    </tbody>
+</table>
+    @*<ol>
         @foreach (var customer in Model)
         {
             <li>@Html.ActionLink(customer.Name,"Details", "Customer", new { id = customer.Id }, null)</li>
         }
-    </ol>
+    </ol>*@
 
 

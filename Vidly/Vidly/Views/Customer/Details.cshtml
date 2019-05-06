@@ -8,3 +8,18 @@
 
 <li>ID is @Model.Id and Customer name is @Model.Name</li>
 
+<table>
+    <tr>
+        <th>Customer</th>
+        <th>Membership Type</th>
+        <th>DOB</th>
+        <th>Gender</th>
+
+    </tr>
+    <tr>
+        <td>@Model.Name</td>
+        <td>@Model.MembershipType.Name</td>
+        <td>@Model.Birthday</td>
+        <td>@Model.Gender</td>
+    </tr>
+</table>
